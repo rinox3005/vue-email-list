@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email List</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <ul>
+        <li v-for="(email, index) in emails">{{ email }}</li>
+      </ul>
+    </div>
     <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- axios -->
