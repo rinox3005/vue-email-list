@@ -5,16 +5,13 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      title: "Email API",
+      title: "Emails from API",
       emails: [],
       length: 10,
       url: "https://flynn.boolean.careers/exercises/api/random/mail",
       message: "Generate",
     };
   },
-  //   mounted() {
-  //     this.getEmails();
-  //   },
   methods: {
     getEmails() {
       this.message = "Wait...";
