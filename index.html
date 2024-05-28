@@ -16,6 +16,13 @@
       <ul v-show="this.emails.length === this.length">
         <li v-for="(email, index) in emails">{{ email }}</li>
       </ul>
+      <button
+        class="reset"
+        @click="clearList()"
+        v-show="this.emails.length === this.length"
+      >
+        Reset
+      </button>
     </div>
     <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

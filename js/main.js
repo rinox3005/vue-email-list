@@ -24,5 +24,9 @@ createApp({
         });
       }
     },
+    clearList() {
+      this.emails = [];
+      this.message = "Generate";
+    },
   },
 }).mount("#app");
